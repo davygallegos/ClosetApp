@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+.section {
+  height: 600px;
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+.brand-logo {
+  font-family: 'Oswald', sans-serif; 
+}
+/* label color */
+.input-field label, h4, .collapsible{
+  color: #000;
+}
+/*.parallax-container {
+  height: 663px;
+}*/
+.button-container {
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  top: 130px;
+}
+.button-container .home-button {
+  margin-right: 5px;
+}
+.carousel {
+  height: 663px;
+}
+.carousel-fixed-item {
+  top: 300px;
+}
+
+#user-name {
+  width: 50%;
+  text-align: center;
+}
+
+#submit-msg {
+  margin-top: 10px;
+  color: black;
+  opacity: 0; 
+  animation: fadeInUp;
+  animation-duration: 5s;
+}
+@keyframes fadeInUp {
+0% { 
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+45% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+
+75% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+
+100% {
+  opacity: 0;
+  -webkit-transform: none;
+  transform: none
+}
+}
+footer {
+  height: 244.84px
+}
+.foot-bottom {
+  margin-top: 150px;
+}
+
+.activator {
+  max-width: 160px;
+}
+
+.card {
+  max-width: 160px;
+  float: left;
+  margin: 10px;
+}

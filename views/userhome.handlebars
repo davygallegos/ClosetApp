@@ -1,0 +1,176 @@
+<header>
+    <!--Navbar -->
+    <nav class="black lighten-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                 {{!-- This is test Search  --}}
+                <ul id="slide-out" class="sidenav">
+                    <li class="no-padding">
+                        <ul class="collapsible">
+                            <li>
+                                <a class="collapsible-header yellow darken-2">SEARCH BY CATEGORY<i class="material-icons">arrow_drop_down</i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                        <ul class="collapsible">
+                                            <li>
+                                                <a class="collapsible-header">Gender Neutral<i class="material-icons right">arrow_drop_down</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul class="collapsible">
+                                                        <li>
+                                                        <a href="#!" id="gnShirt">&emsp;Shirts</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#!" id="gnPants">&emsp;Pants</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#!" id="gnDress">&emsp;Dress</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#!" id="gnShoes">&emsp;Shoes</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="collapsible-header">Men<i class="material-icons right">arrow_drop_down</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul class="collapsible">
+                                                        <li>
+                                                        <a href="#!" id="menShirts">&emsp;Shirts</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#!" id="menPants">&emsp;Pants</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#!" id="menShoes">&emsp;Shoes</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a class="collapsible-header">Women<i class="material-icons right">arrow_drop_down</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul class="collapsible">
+                                                       <li>
+                                                        <a href="#!" id="womenShirt">&emsp;Shirts</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#!" id="womenPants">&emsp;Pants</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#!" id="womenDress">&emsp;Dress!</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#!" id="womenShoes">&emsp;Shoes!</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                <li>
+                    <a class="sidenav-trigger show-on-large" href="#!" data-target="slide-out">
+                    <i class="material-icons right">menu</i>
+                    </a>
+                </li>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li>
+                    <a href="#!">Shirt</a>
+                    </li>
+                    <li>
+                    <a href="#!">Pants</a>
+                    </li>
+                    <li>
+                    <a href="#!">Dress</a>
+                    </li>
+                    <li>
+                    <a href="#!">Shoes</a>
+                    </li>
+                </ul>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+                </a>
+                 {{!-- End of test Search  --}}
+                <a href="./" class="show-on-small hide-on-large-only"></i>Home</a>
+                <a href="./" class="brand-logo hide-on-small-only"><i class="fas fa-tshirt"></i>My Closet</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <!-- Modal Trigger-->
+                    <a class="waves-effect waves-light btn yellow darken-2 modal-trigger" href="#modal1">Log Out</a>                        
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <!-- Log in Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Log in</h4>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="user_name" type="text" class="validate">
+                    <label for="user_name">USERNAME</label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="password" type="text" class="validate">
+                    <label for="password">PASSWORD</label>
+                </div>
+            </div>    
+        </div>
+        <div class="modal-footer">
+            <button class=" modal-close btn waves-effect waves-yellow darken-2 btn-flat" type="submit" name="action">
+                    <a href="#" class="modal-close waves-effect waves-yellow darken-2 btn-flat">Log out</a>  
+            </button>
+        </div>
+    </div>                  
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h5>Search Result</h5>
+                <hr>
+                <div id="search-result">
+
+
+
+
+                </div>   
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col s12">
+                <h5>My Closet</h5>
+                <hr>
+                <div id="closet"></div>
+            </div>
+        </div> 
+    </div>   
+</main>
+<!-- Footer -->
+<footer class="page-footer black lighten-2">
+<div class="container">
+    <div class="row">
+    <div class="col l6 s12"></div>
+    <div class="col l4 offset-l2 s12"> 
+    </div>
+    </div>
+</div>
+<div class="footer-copyright">
+    <div class="container foot-bottom center-align">
+    © 2019 Copyright My Closet - All Rights Reserved
+    </div>
+</div>
+</footer>
+<!-- Library Links -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="/js/userhome.js"></script>
